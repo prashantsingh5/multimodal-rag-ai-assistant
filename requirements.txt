@@ -1,0 +1,52 @@
+# ── Core framework ──────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9          # FastAPI file uploads
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# ── LangChain ecosystem ──────────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-google-genai>=1.0.0
+
+# ── Vector stores ────────────────────────────────────────────────────────────
+faiss-cpu>=1.7.4                  # swap to faiss-gpu if you have CUDA
+chromadb>=0.5.0                   # optional; only needed for chroma backend
+
+# ── Embeddings ───────────────────────────────────────────────────────────────
+sentence-transformers>=2.7.0
+torch>=2.2.0                      # CPU build; remove version pin for GPU
+transformers>=4.40.0
+
+# ── Document loaders ─────────────────────────────────────────────────────────
+pypdf>=4.2.0                      # PDF parsing
+PyMuPDF>=1.24.0                   # fitz — fast PDF text extraction (fallback)
+docx2txt>=0.8
+unstructured>=0.13.0              # HTML / URL loader
+beautifulsoup4>=4.12.0            # fallback URL text extraction
+Pillow>=10.3.0                    # image handling
+
+# ── Multimedia ──────────────────────────────────────────────────────────────
+youtube-transcript-api>=0.6.2
+youtube-search-python>=1.6.6
+
+# ── Summarization ─────────────────────────────────────────────────────────
+# transformers already covers BART; no extra install needed
+
+# ── Humanization / NLP ──────────────────────────────────────────────────────
+textstat>=0.7.3
+nltk>=3.8.1
+spacy>=3.7.4
+# After install, run:  python -m spacy download en_core_web_sm
+
+# ── Google AI ────────────────────────────────────────────────────────────────
+google-generativeai>=0.7.0
+
+# ── Frontend ─────────────────────────────────────────────────────────────────
+gradio>=4.36.0
+
+# ── Data utilities ───────────────────────────────────────────────────────────
+pandas>=2.2.0
+numpy>=1.26.0
