@@ -22,27 +22,7 @@ Portfolio-grade, production-style AI assistant that combines multimodal ingestio
 
 ## System Architecture
 
-```text
-Ingestion Layer
-    -> Loaders (PDF, DOCX, TXT, URL, YouTube, Image)
-    -> Preprocessor
-    -> Chunker
-    -> Vector Store (FAISS/Chroma)
-
-Query Layer
-    -> QueryProcessor (clean + classify intent + expand)
-    -> Retriever
-    -> ContextBuilder
-    -> LLMClient (Gemini/OpenAI)
-
-Post Processing
-    -> Summarizer (optional)
-    -> Humanizer (optional)
-
-Delivery Layer
-    -> FastAPI REST endpoints
-    -> Gradio interactive UI
-```
+<img width="1282" height="2748" alt="rag architecture" src="https://github.com/user-attachments/assets/f0ff02b4-82b8-4d92-9621-4f099ff27391" />
 
 ## Ingestion Sources
 
