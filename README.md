@@ -146,44 +146,6 @@ Smoke tests:
 
 Current baseline: `19/19` passing.
 
-## Demo Video Playbook
-
-Use this script to record a high-impact demo in under 4 minutes.
-
-### Step 1: Show ingest breadth
-
-1. Upload one PDF
-2. Ingest one URL
-3. Ingest one YouTube link
-
-Expected talking point:
-
-"This assistant can unify heterogeneous knowledge sources into a single retrievable memory."
-
-### Step 2: Ask strong, evaluation-grade questions
-
-Ask these in order:
-
-1. Document-only grounding
-     - "From the uploaded PDF, what are the top 5 core topics and where are they discussed?"
-2. URL-only extraction
-     - "From the webpage I ingested, summarize the main argument, constraints, and practical recommendations."
-3. YouTube-only extraction
-     - "From the YouTube transcript, what are the speaker's key claims, and what actionable steps are suggested?"
-4. Cross-source synthesis
-     - "Compare the PDF and YouTube perspectives on this topic. Where do they agree, and where do they differ?"
-5. Evidence-backed answer
-     - "Give me a final recommendation using all ingested sources and clearly cite the evidence used."
-
-### Step 3: Show quality controls
-
-Ask the same question twice:
-
-- once with summarization on
-- once with humanization on
-
-Then highlight the difference in readability and concision.
-
 ## Roadmap
 
 - Add reranker layer for retrieval quality
