@@ -7,6 +7,11 @@ Portfolio-grade, production-style AI assistant that combines multimodal ingestio
 [![Gradio](https://img.shields.io/badge/UI-Gradio-orange.svg)](https://www.gradio.app/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+## Live Demo Video
+
+- Full walkthrough: [Watch the demo](https://github.com/user-attachments/assets/0d10551e-10e9-469e-ab5c-6645642b81c0)
+- Includes: PDF + URL + YouTube ingestion, cross-source Q&A, summarization and humanization comparison
+
 ## Why This Project Stands Out
 
 - Multimodal knowledge ingestion: PDF, DOCX, TXT/MD, URL, YouTube transcripts, images
